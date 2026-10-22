@@ -59,6 +59,18 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Serve static client assets in production
+const CLIENT_DIST = path.join(__dirname, '../../client/dist');
+if (fs.existsSync(CLIENT_DIST)) {
+  app.use(express.static(CLIENT_DIST));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/uploads') || req.path.startsWith('/samples')) {
+      return next();
+    }
+    res.sendFile(path.join(CLIENT_DIST, 'index.html'));
+  });
+}
+
 // Centralized error handler
 app.use((err, req, res, next) => {
   console.error('Unhandled server error:', err);
