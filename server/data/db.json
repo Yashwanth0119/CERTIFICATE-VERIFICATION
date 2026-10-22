@@ -1,0 +1,1572 @@
+{
+  "users": [
+    {
+      "id": "usr_emp1",
+      "username": "employee1",
+      "passwordHash": "$2a$10$zyPsp1tJv/7laSkpblD3NOxvbZdkrzORLJ5sEJ9UJ.4Jym10dUHAi",
+      "role": "employee",
+      "name": "Arjun Kumar",
+      "email": "arjun.kumar@acme-corp.internal",
+      "department": "Software Engineering",
+      "createdAt": "2025-01-10T08:00:00Z"
+    },
+    {
+      "id": "usr_emp2",
+      "username": "employee2",
+      "passwordHash": "$2a$10$zyPsp1tJv/7laSkpblD3NOxvbZdkrzORLJ5sEJ9UJ.4Jym10dUHAi",
+      "role": "employee",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@acme-corp.internal",
+      "department": "Cybersecurity Operations",
+      "createdAt": "2025-01-10T08:30:00Z"
+    },
+    {
+      "id": "usr_hradmin",
+      "username": "hradmin",
+      "passwordHash": "$2a$10$zyPsp1tJv/7laSkpblD3NO4rB9legDT5NUDcWckTZQOuAlcXPZiwa",
+      "role": "hr",
+      "name": "Sarah Jenkins",
+      "email": "sarah.jenkins@acme-corp.internal",
+      "department": "Human Resources & Talent Compliance",
+      "createdAt": "2025-01-01T09:00:00Z"
+    }
+  ],
+  "registry": [
+    {
+      "certificateId": "DEMO-CERT-1001",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "issueDate": "15 August 2025",
+      "status": "VALID",
+      "accreditationCode": "ETI-ACCRED-2025-998",
+      "credentialHash": "sha256-8a7f9e2b1c4d0a9f538e1b6a7c8d9e0f",
+      "issuerAuthority": "Example Technical Institute Board of Certifications",
+      "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+      "tamperProtectionEnabled": true,
+      "remarks": "Official registered certificate record. Fully verified and accredited."
+    },
+    {
+      "certificateId": "DEMO-CERT-2002",
+      "recipientName": "Vikram Malhotra",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Cybersecurity Fundamentals",
+      "issueDate": "15 August 2025",
+      "status": "VALID",
+      "accreditationCode": "ETI-ACCRED-2025-442",
+      "credentialHash": "sha256-4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f",
+      "issuerAuthority": "Example Technical Institute Board of Certifications",
+      "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+      "tamperProtectionEnabled": true,
+      "remarks": "Official institutional registry record. Recipient on record: Vikram Malhotra."
+    },
+    {
+      "certificateId": "DEMO-CERT-3003",
+      "recipientName": "Rohan Verma",
+      "issuingInstitution": "National Cloud Computing Academy",
+      "certificateType": "Cloud Architecture & DevOps",
+      "issueDate": "10 September 2025",
+      "status": "VALID",
+      "accreditationCode": "NCCA-2025-771",
+      "credentialHash": "sha256-11223344556677889900aabbccddeeff",
+      "issuerAuthority": "National Cloud Computing Academy Registrar",
+      "issuerKeyFingerprint": "7A:3F:B1:88:99:AA:BB:CC:DD",
+      "tamperProtectionEnabled": true,
+      "remarks": "Official registered record for Cloud Architecture credentials."
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub_1792678402701_hn99o",
+      "submissionDate": "2026-10-22T14:13:22.701Z",
+      "status": "Verified as Authentic",
+      "verificationId": "ver_1792678464690_265dg",
+      "verificationResult": "VERIFIED AS AUTHENTIC",
+      "verificationSummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "certificateId": "DEMO-CERT-1001",
+      "certificateTitle": "WEB",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO (1).pdf",
+      "storedFilename": "cert_1792678402694_jje2ak.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792678402694_jje2ak.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T14:14:24.694Z"
+    },
+    {
+      "id": "sub_1792677228326_7on9y",
+      "submissionDate": "2026-10-22T13:53:48.326Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792677237380_eqddy",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\". PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\".",
+      "certificateId": "DEMO-CERT-2002",
+      "certificateTitle": "WEB",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "employeeDepartment": "Cybersecurity Operations",
+      "originalFilename": "Sample_Certificate_B_Altered_DEMO.pdf",
+      "storedFilename": "cert_1792677228322_beb0iy.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792677228322_beb0iy.pdf",
+      "fileSize": 3369,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:53:57.384Z"
+    },
+    {
+      "id": "sub_1792675148180_0nzjd",
+      "submissionDate": "2026-10-22T13:19:08.180Z",
+      "status": "Verified as Authentic",
+      "verificationId": "ver_1792675236992_91f4w",
+      "verificationResult": "VERIFIED AS AUTHENTIC",
+      "verificationSummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "certificateId": "DEMO-CERT-1001",
+      "certificateTitle": "web",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO (7).pdf",
+      "storedFilename": "cert_1792675148177_bu6sru.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792675148177_bu6sru.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:20:36.997Z"
+    },
+    {
+      "id": "sub_1792674731315_tqq8y",
+      "submissionDate": "2026-10-22T13:12:11.315Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792674764137_zl4ih",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "certificateId": "ID: DEMO-CERT-1001",
+      "certificateTitle": "Web Development",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO (4).pdf",
+      "storedFilename": "cert_1792674731314_16nugz.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674731314_16nugz.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:12:44.139Z"
+    },
+    {
+      "id": "sub_1792674446482_fvxya",
+      "submissionDate": "2026-10-22T13:07:26.482Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792674498532_slauj",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "certificateId": "CERT-446482",
+      "certificateTitle": "jjf",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "employeeDepartment": "Cybersecurity Operations",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO (2).pdf",
+      "storedFilename": "cert_1792674446481_vtix4b.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674446481_vtix4b.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:08:18.534Z"
+    },
+    {
+      "id": "sub_1792674322286_ip0df",
+      "submissionDate": "2026-10-22T13:05:22.286Z",
+      "status": "Verified as Authentic",
+      "verificationId": "ver_1792674360672_teylp",
+      "verificationResult": "VERIFIED AS AUTHENTIC",
+      "verificationSummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "certificateId": "CERT-322286",
+      "certificateTitle": "jhhg",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO (1).pdf",
+      "storedFilename": "cert_1792674322285_61asnw.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674322285_61asnw.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:06:15.230Z"
+    },
+    {
+      "id": "sub_1792674203152_py1pp",
+      "submissionDate": "2026-10-22T13:03:23.152Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792674275856_1cwv5",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "certificateId": "CERT-203152",
+      "certificateTitle": "jhv",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original_DEMO.pdf",
+      "storedFilename": "cert_1792674203151_i77onq.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674203151_i77onq.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T13:04:35.858Z"
+    },
+    {
+      "id": "sub_1792673812822_vi4lf",
+      "submissionDate": "2026-10-22T12:56:52.822Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792673812840_ikf7z",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\".",
+      "certificateId": "DEMO-CERT-2002",
+      "certificateTitle": "Cybersecurity Fundamentals Credential",
+      "certificateType": "Cybersecurity Fundamentals",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "employeeDepartment": "Cybersecurity Operations",
+      "originalFilename": "Sample_Certificate_B_Altered.pdf",
+      "storedFilename": "cert_1792673812821_tlonqk.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792673812821_tlonqk.pdf",
+      "fileSize": 3369,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T12:56:52.842Z"
+    },
+    {
+      "id": "sub_1792673812061_bs2ur",
+      "submissionDate": "2026-10-22T12:56:52.061Z",
+      "status": "Verified as Authentic",
+      "verificationId": "ver_1792673812730_ax7h4",
+      "verificationResult": "VERIFIED AS AUTHENTIC",
+      "verificationSummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "certificateId": "DEMO-CERT-1001",
+      "certificateTitle": "Certified Web Specialist",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "employeeDepartment": "Software Engineering",
+      "originalFilename": "Sample_Certificate_A_Original.pdf",
+      "storedFilename": "cert_1792673812059_tniu7t.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792673812059_tniu7t.pdf",
+      "fileSize": 3355,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T12:56:52.732Z"
+    }
+  ],
+  "verifications": [
+    {
+      "id": "ver_1792678464690_265dg",
+      "timestamp": "2026-10-22T14:14:24.690Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792678402701_hn99o",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-1001",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO (1).pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792678402694_jje2ak.pdf",
+      "confidenceScore": 100,
+      "automatedResult": "VERIFIED AS AUTHENTIC",
+      "checksPassed": 7,
+      "checksFailed": 0,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-1001\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-1001\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Recipient name \"Arjun Kumar\" perfectly matches institutional record for Arjun Kumar."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-998."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Course/Program specification matches registered qualification \"Web Development\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [],
+      "discrepancySummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-998",
+        "credentialHash": "sha256-8a7f9e2b1c4d0a9f538e1b6a7c8d9e0f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official registered certificate record. Fully verified and accredited."
+      }
+    },
+    {
+      "id": "ver_1792677237380_eqddy",
+      "timestamp": "2026-10-22T13:53:57.380Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792677228326_7on9y",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-2002",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "recipientName": "Priya Sharma",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_B_Altered_DEMO.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792677228322_beb0iy.pdf",
+      "confidenceScore": 45,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 5,
+      "checksFailed": 2,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-2002\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-2002\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\"."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-442."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\".",
+        "PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\"."
+      ],
+      "discrepancySummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\". PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\".",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Priya Sharma",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "d715c24c53f31e5ef531fe59aeb08bc5..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Vikram Malhotra",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Cybersecurity Fundamentals",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-442",
+        "credentialHash": "sha256-4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official institutional registry record. Recipient on record: Vikram Malhotra."
+      }
+    },
+    {
+      "id": "ver_1792675236992_91f4w",
+      "timestamp": "2026-10-22T13:20:36.992Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792675148180_0nzjd",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-1001",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO (7).pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792675148177_bu6sru.pdf",
+      "confidenceScore": 100,
+      "automatedResult": "VERIFIED AS AUTHENTIC",
+      "checksPassed": 7,
+      "checksFailed": 0,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-1001\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-1001\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Recipient name \"Arjun Kumar\" perfectly matches institutional record for Arjun Kumar."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-998."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Course/Program specification matches registered qualification \"Web Development\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [],
+      "discrepancySummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-998",
+        "credentialHash": "sha256-8a7f9e2b1c4d0a9f538e1b6a7c8d9e0f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official registered certificate record. Fully verified and accredited."
+      }
+    },
+    {
+      "id": "ver_1792674764137_zl4ih",
+      "timestamp": "2026-10-22T13:12:44.137Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792674731315_tqq8y",
+      "isDirectUpload": false,
+      "certificateId": "ID: DEMO-CERT-1001",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO (4).pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674731314_16nugz.pdf",
+      "confidenceScore": 30,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 3,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"ID: DEMO-CERT-1001\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "Certificate ID \"ID: DEMO-CERT-1001\" does not exist in the accredited demonstration registry."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database."
+      ],
+      "discrepancySummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "extractedData": {
+        "certificateId": "ID: DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": null
+    },
+    {
+      "id": "ver_1792674498532_slauj",
+      "timestamp": "2026-10-22T13:08:18.532Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792674446482_fvxya",
+      "isDirectUpload": false,
+      "certificateId": "CERT-446482",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "recipientName": "Priya Sharma",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO (2).pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674446481_vtix4b.pdf",
+      "confidenceScore": 30,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 3,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"CERT-446482\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "Certificate ID \"CERT-446482\" does not exist in the accredited demonstration registry."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database."
+      ],
+      "discrepancySummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "extractedData": {
+        "certificateId": "CERT-446482",
+        "recipientName": "Priya Sharma",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": null
+    },
+    {
+      "id": "ver_1792674360672_teylp",
+      "timestamp": "2026-10-22T13:06:00.672Z",
+      "hrDecision": "VERIFIED AS AUTHENTIC",
+      "reviewNotes": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792674322286_ip0df",
+      "isDirectUpload": false,
+      "certificateId": "CERT-322286",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO (1).pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674322285_61asnw.pdf",
+      "confidenceScore": 30,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 3,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"CERT-322286\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "Certificate ID \"CERT-322286\" does not exist in the accredited demonstration registry."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database."
+      ],
+      "discrepancySummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "extractedData": {
+        "certificateId": "CERT-322286",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": null,
+      "reviewedAt": "2026-10-22T13:06:15.229Z"
+    },
+    {
+      "id": "ver_1792674275856_1cwv5",
+      "timestamp": "2026-10-22T13:04:35.856Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792674203152_py1pp",
+      "isDirectUpload": false,
+      "certificateId": "CERT-203152",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674203151_i77onq.pdf",
+      "confidenceScore": 30,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 3,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"CERT-203152\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "Certificate ID \"CERT-203152\" does not exist in the accredited demonstration registry."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database."
+      ],
+      "discrepancySummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "extractedData": {
+        "certificateId": "CERT-203152",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": null
+    },
+    {
+      "id": "ver_1792674271431_qstjn",
+      "timestamp": "2026-10-22T13:04:31.431Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792674203152_py1pp",
+      "isDirectUpload": false,
+      "certificateId": "CERT-203152",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_A_Original_DEMO.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792674203151_i77onq.pdf",
+      "confidenceScore": 30,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 3,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"CERT-203152\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "Certificate ID \"CERT-203152\" does not exist in the accredited demonstration registry."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database."
+      ],
+      "discrepancySummary": "UNREGISTERED CREDENTIAL: This certificate identifier does not exist in any accredited institutional database.",
+      "extractedData": {
+        "certificateId": "CERT-203152",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": null
+    },
+    {
+      "id": "ver_1792673812840_ikf7z",
+      "timestamp": "2026-10-22T12:56:52.840Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792673812822_vi4lf",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-2002",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "recipientName": "Priya Sharma",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Cybersecurity Fundamentals",
+      "targetFileName": "Sample_Certificate_B_Altered.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792673812821_tlonqk.pdf",
+      "confidenceScore": 45,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 6,
+      "checksFailed": 1,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-2002\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-2002\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\"."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-442."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Course/Program specification matches registered qualification \"Cybersecurity Fundamentals\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\"."
+      ],
+      "discrepancySummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\".",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Priya Sharma",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Cybersecurity Fundamentals",
+        "issueDate": "2025-08-15",
+        "fileHash": "d715c24c53f31e5ef531fe59aeb08bc5..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Vikram Malhotra",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Cybersecurity Fundamentals",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-442",
+        "credentialHash": "sha256-4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official institutional registry record. Recipient on record: Vikram Malhotra."
+      }
+    },
+    {
+      "id": "ver_1792673812730_ax7h4",
+      "timestamp": "2026-10-22T12:56:52.730Z",
+      "hrDecision": null,
+      "reviewNotes": null,
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792673812061_bs2ur",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-1001",
+      "employeeId": "usr_emp1",
+      "employeeName": "Arjun Kumar",
+      "employeeUsername": "employee1",
+      "recipientName": "Arjun Kumar\nhas successfully",
+      "issuingInstitution": "EXAMPLE TECHNICAL INSTITUTE",
+      "certificateType": "ion and demonstrated proficiency in\nWeb Development",
+      "targetFileName": "Sample_Certificate_A_Original.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792673812059_tniu7t.pdf",
+      "confidenceScore": 100,
+      "automatedResult": "VERIFIED AS AUTHENTIC",
+      "checksPassed": 7,
+      "checksFailed": 0,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-1001\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-1001\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Recipient name \"Arjun Kumar\nhas successfully\" perfectly matches institutional record for Arjun Kumar."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-998."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Course/Program specification matches registered qualification \"Web Development\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [],
+      "discrepancySummary": "All verification checks passed with zero anomalies detected. Credential is confirmed authentic.",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar\nhas successfully",
+        "issuingInstitution": "EXAMPLE TECHNICAL INSTITUTE",
+        "certificateType": "ion and demonstrated proficiency in\nWeb Development",
+        "issueDate": "15 August 2025",
+        "fileHash": "30e6a0cce39c5321f55f16ec50dbd72b..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-1001",
+        "recipientName": "Arjun Kumar",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-998",
+        "credentialHash": "sha256-8a7f9e2b1c4d0a9f538e1b6a7c8d9e0f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official registered certificate record. Fully verified and accredited."
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_1792678470454_gn2d1",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T14:14:30.454Z"
+    },
+    {
+      "id": "log_1792678464700_lx970",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO (1).pdf\" -> Result: VERIFIED AS AUTHENTIC",
+      "timestamp": "2026-10-22T14:14:24.701Z"
+    },
+    {
+      "id": "log_1792678452274_7dxc4",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T14:14:12.274Z"
+    },
+    {
+      "id": "log_1792678405972_2e2p9",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T14:13:25.972Z"
+    },
+    {
+      "id": "log_1792678402707_6ex4w",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"WEB\" (ID: DEMO-CERT-1001).",
+      "timestamp": "2026-10-22T14:13:22.707Z"
+    },
+    {
+      "id": "log_1792678271846_efiog",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T14:11:11.846Z"
+    },
+    {
+      "id": "log_1792678241008_b51bl",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T14:10:41.008Z"
+    },
+    {
+      "id": "log_1792678013879_hxx9b",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T14:06:53.879Z"
+    },
+    {
+      "id": "log_1792677296979_6tcqk",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:54:56.979Z"
+    },
+    {
+      "id": "log_1792677237389_yx1s9",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_B_Altered_DEMO.pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:53:57.389Z"
+    },
+    {
+      "id": "log_1792677233316_dkbtg",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:53:53.316Z"
+    },
+    {
+      "id": "log_1792677230137_gltrj",
+      "userId": "usr_emp2",
+      "action": "USER_LOGOUT",
+      "details": "User employee2 logged out.",
+      "timestamp": "2026-10-22T13:53:50.137Z"
+    },
+    {
+      "id": "log_1792677228332_4nojc",
+      "userId": "usr_emp2",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee2 submitted certificate \"WEB\" (ID: DEMO-CERT-2002).",
+      "timestamp": "2026-10-22T13:53:48.332Z"
+    },
+    {
+      "id": "log_1792677181849_jylty",
+      "userId": "usr_emp2",
+      "action": "USER_LOGIN",
+      "details": "User employee2 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:53:01.849Z"
+    },
+    {
+      "id": "log_1792677153263_0w29j",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:52:33.263Z"
+    },
+    {
+      "id": "log_1792677148392_aemx5",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:52:28.392Z"
+    },
+    {
+      "id": "log_1792676932091_2ux9a",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:48:52.091Z"
+    },
+    {
+      "id": "log_1792675828871_z2vg4",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:30:28.871Z"
+    },
+    {
+      "id": "log_1792675646366_u9s96",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:27:26.366Z"
+    },
+    {
+      "id": "log_1792675237001_inm0i",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO (7).pdf\" -> Result: VERIFIED AS AUTHENTIC",
+      "timestamp": "2026-10-22T13:20:37.001Z"
+    },
+    {
+      "id": "log_1792675217670_6237s",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:20:17.670Z"
+    },
+    {
+      "id": "log_1792675150334_t5cln",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T13:19:10.334Z"
+    },
+    {
+      "id": "log_1792675148185_897sq",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"web\" (ID: DEMO-CERT-1001).",
+      "timestamp": "2026-10-22T13:19:08.185Z"
+    },
+    {
+      "id": "log_1792675086363_u8lwt",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:18:06.363Z"
+    },
+    {
+      "id": "log_1792674987067_ica7p",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T13:16:27.067Z"
+    },
+    {
+      "id": "log_1792674859915_i8oei",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:14:19.915Z"
+    },
+    {
+      "id": "log_1792674781589_uciv8",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:13:01.589Z"
+    },
+    {
+      "id": "log_1792674764141_hnug7",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO (4).pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:12:44.141Z"
+    },
+    {
+      "id": "log_1792674761072_bqdov",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:12:41.072Z"
+    },
+    {
+      "id": "log_1792674733829_irhry",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T13:12:13.829Z"
+    },
+    {
+      "id": "log_1792674731317_jbydd",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"Web Development\" (ID: ID: DEMO-CERT-1001).",
+      "timestamp": "2026-10-22T13:12:11.317Z"
+    },
+    {
+      "id": "log_1792674638135_lf8np",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:10:38.135Z"
+    },
+    {
+      "id": "log_1792674616547_45u00",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:10:16.547Z"
+    },
+    {
+      "id": "log_1792674609798_c8wy3",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:10:09.798Z"
+    },
+    {
+      "id": "log_1792674509472_p3pip",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:08:29.472Z"
+    },
+    {
+      "id": "log_1792674498536_wfn8m",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO (2).pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:08:18.536Z"
+    },
+    {
+      "id": "log_1792674488341_3y7yc",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:08:08.341Z"
+    },
+    {
+      "id": "log_1792674453863_5ll7b",
+      "userId": "usr_emp2",
+      "action": "USER_LOGOUT",
+      "details": "User employee2 logged out.",
+      "timestamp": "2026-10-22T13:07:33.863Z"
+    },
+    {
+      "id": "log_1792674446484_dxkk5",
+      "userId": "usr_emp2",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee2 submitted certificate \"jjf\" (ID: CERT-446482).",
+      "timestamp": "2026-10-22T13:07:26.484Z"
+    },
+    {
+      "id": "log_1792674434211_twahy",
+      "userId": "usr_emp2",
+      "action": "USER_LOGIN",
+      "details": "User employee2 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:07:14.211Z"
+    },
+    {
+      "id": "log_1792674413754_f5hbw",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:06:53.754Z"
+    },
+    {
+      "id": "log_1792674375232_8fysx",
+      "userId": "usr_hradmin",
+      "action": "DECISION_RECORDED",
+      "details": "HR Administrator hradmin recorded decision: VERIFIED AS AUTHENTIC for verification ver_1792674360672_teylp.",
+      "timestamp": "2026-10-22T13:06:15.232Z"
+    },
+    {
+      "id": "log_1792674360678_wywmh",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO (1).pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:06:00.679Z"
+    },
+    {
+      "id": "log_1792674347030_zeezq",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:05:47.030Z"
+    },
+    {
+      "id": "log_1792674324947_4ywjb",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T13:05:24.947Z"
+    },
+    {
+      "id": "log_1792674322288_q55kq",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"jhhg\" (ID: CERT-322286).",
+      "timestamp": "2026-10-22T13:05:22.288Z"
+    },
+    {
+      "id": "log_1792674302486_rzgpy",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T13:05:02.486Z"
+    },
+    {
+      "id": "log_1792674298947_sgqhy",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGOUT",
+      "details": "User hradmin logged out.",
+      "timestamp": "2026-10-22T13:04:58.947Z"
+    },
+    {
+      "id": "log_1792674275860_m1gjn",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO.pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:04:35.860Z"
+    },
+    {
+      "id": "log_1792674271436_k19h9",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original_DEMO.pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T13:04:31.436Z"
+    },
+    {
+      "id": "log_1792674240093_zu4xh",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T13:04:00.093Z"
+    },
+    {
+      "id": "log_1792674206384_j89up",
+      "userId": "usr_emp1",
+      "action": "USER_LOGOUT",
+      "details": "User employee1 logged out.",
+      "timestamp": "2026-10-22T13:03:26.384Z"
+    },
+    {
+      "id": "log_1792674203153_6uuwg",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"jhv\" (ID: CERT-203152).",
+      "timestamp": "2026-10-22T13:03:23.153Z"
+    },
+    {
+      "id": "log_1792673964959_timas",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T12:59:24.959Z"
+    },
+    {
+      "id": "log_1792673812843_rinb0",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_B_Altered.pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T12:56:52.843Z"
+    },
+    {
+      "id": "log_1792673812824_z0ujz",
+      "userId": "usr_emp2",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee2 submitted certificate \"Cybersecurity Fundamentals Credential\" (ID: DEMO-CERT-2002).",
+      "timestamp": "2026-10-22T12:56:52.824Z"
+    },
+    {
+      "id": "log_1792673812812_0a6kk",
+      "userId": "usr_emp2",
+      "action": "USER_LOGIN",
+      "details": "User employee2 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T12:56:52.812Z"
+    },
+    {
+      "id": "log_1792673812734_5y20a",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_A_Original.pdf\" -> Result: VERIFIED AS AUTHENTIC",
+      "timestamp": "2026-10-22T12:56:52.734Z"
+    },
+    {
+      "id": "log_1792673812150_ejuya",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T12:56:52.150Z"
+    },
+    {
+      "id": "log_1792673812063_ye3nn",
+      "userId": "usr_emp1",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee1 submitted certificate \"Certified Web Specialist\" (ID: DEMO-CERT-1001).",
+      "timestamp": "2026-10-22T12:56:52.063Z"
+    },
+    {
+      "id": "log_1792673812042_tbk8t",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T12:56:52.042Z"
+    },
+    {
+      "id": "log_1792673510601_y2c7g",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T12:51:50.601Z"
+    },
+    {
+      "id": "log_1792673510519_hm44a",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T12:51:50.519Z"
+    },
+    {
+      "id": "log_1792663221960_29tyo",
+      "userId": "usr_emp1",
+      "action": "USER_LOGIN",
+      "details": "User employee1 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T10:00:21.960Z"
+    },
+    {
+      "id": "log_1792663228617_0igms",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T10:00:28.617Z"
+    }
+  ]
+}
