@@ -2,6 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import bcrypt from 'bcryptjs';
+import mongoose from 'mongoose';
+import { SubmissionModel } from '../models/Submission.js';
+import { VerificationModel } from '../models/Verification.js';
+import { AuditLogModel } from '../models/AuditLog.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -178,6 +182,13 @@ class JSONDatabase {
     };
     this.data.submissions.unshift(submission);
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      SubmissionModel.create(submission).catch((err) =>
+        console.warn('[MongoDB Sync] createSubmission error:', err.message)
+      );
+    }
+
     return submission;
   }
 
@@ -205,6 +216,13 @@ class JSONDatabase {
       updatedAt: new Date().toISOString()
     };
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      SubmissionModel.findOneAndUpdate({ id }, this.data.submissions[index], { upsert: true }).catch((err) =>
+        console.warn('[MongoDB Sync] updateSubmission error:', err.message)
+      );
+    }
+
     return this.data.submissions[index];
   }
 
@@ -213,6 +231,13 @@ class JSONDatabase {
     if (index === -1) return false;
     const deleted = this.data.submissions.splice(index, 1);
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      SubmissionModel.findOneAndDelete({ id }).catch((err) =>
+        console.warn('[MongoDB Sync] deleteSubmission error:', err.message)
+      );
+    }
+
     return deleted[0];
   }
 
@@ -229,6 +254,13 @@ class JSONDatabase {
     };
     this.data.verifications.unshift(verification);
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      VerificationModel.create(verification).catch((err) =>
+        console.warn('[MongoDB Sync] createVerification error:', err.message)
+      );
+    }
+
     return verification;
   }
 
@@ -249,6 +281,13 @@ class JSONDatabase {
       reviewedAt: new Date().toISOString()
     };
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      VerificationModel.findOneAndUpdate({ id }, this.data.verifications[index], { upsert: true }).catch((err) =>
+        console.warn('[MongoDB Sync] updateVerification error:', err.message)
+      );
+    }
+
     return this.data.verifications[index];
   }
 
@@ -270,6 +309,13 @@ class JSONDatabase {
       this.data.auditLogs = this.data.auditLogs.slice(0, 500);
     }
     this.save();
+
+    if (mongoose.connection.readyState === 1) {
+      AuditLogModel.create(log).catch((err) =>
+        console.warn('[MongoDB Sync] logAction error:', err.message)
+      );
+    }
+
     return log;
   }
 

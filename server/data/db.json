@@ -77,6 +77,29 @@
   ],
   "submissions": [
     {
+      "id": "sub_1792678568912_4zu91",
+      "submissionDate": "2026-10-22T14:16:08.912Z",
+      "status": "Flagged as Potentially Fake",
+      "verificationId": "ver_1792678624810_7d2c8",
+      "verificationResult": "FLAGGED AS POTENTIALLY FAKE",
+      "verificationSummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\". PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\".",
+      "certificateId": "DEMO-CERT-2002",
+      "certificateTitle": "WEB",
+      "certificateType": "Web Development",
+      "issuingInstitution": "Example Technical Institute",
+      "issueDate": "2025-08-15",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "employeeDepartment": "Cybersecurity Operations",
+      "originalFilename": "Sample_Certificate_B_Altered_DEMO.pdf",
+      "storedFilename": "cert_1792678568909_y3qbbh.pdf",
+      "storedFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792678568909_y3qbbh.pdf",
+      "fileSize": 3369,
+      "mimeType": "application/pdf",
+      "updatedAt": "2026-10-22T14:17:16.355Z"
+    },
+    {
       "id": "sub_1792678402701_hn99o",
       "submissionDate": "2026-10-22T14:13:22.701Z",
       "status": "Verified as Authentic",
@@ -285,6 +308,108 @@
     }
   ],
   "verifications": [
+    {
+      "id": "ver_1792678624810_7d2c8",
+      "timestamp": "2026-10-22T14:17:04.811Z",
+      "hrDecision": "FLAGGED AS POTENTIALLY FAKE",
+      "reviewNotes": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\". PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\".",
+      "reviewerId": "usr_hradmin",
+      "reviewerName": "Sarah Jenkins",
+      "submissionId": "sub_1792678568912_4zu91",
+      "isDirectUpload": false,
+      "certificateId": "DEMO-CERT-2002",
+      "employeeId": "usr_emp2",
+      "employeeName": "Priya Sharma",
+      "employeeUsername": "employee2",
+      "recipientName": "Priya Sharma",
+      "issuingInstitution": "Example Technical Institute",
+      "certificateType": "Web Development",
+      "targetFileName": "Sample_Certificate_B_Altered_DEMO.pdf",
+      "targetFilePath": "C:\\Users\\yashwanth\\OneDrive\\Attachments\\Desktop\\digital certificate verification\\server\\uploads\\cert_1792678568909_y3qbbh.pdf",
+      "confidenceScore": 45,
+      "automatedResult": "FLAGGED AS POTENTIALLY FAKE",
+      "checksPassed": 5,
+      "checksFailed": 2,
+      "checks": [
+        {
+          "name": "File Format & Structure Integrity",
+          "category": "Format",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Valid binary format detected (PDF). File size: 3.3 KB. SHA-256 hash computed successfully."
+        },
+        {
+          "name": "Credential Identification Token Extraction",
+          "category": "Data Extraction",
+          "passed": true,
+          "scoreContribution": 15,
+          "details": "Extracted Certificate Identifier: \"DEMO-CERT-2002\"."
+        },
+        {
+          "name": "Institutional Registry Verification",
+          "category": "Registry Lookup",
+          "passed": true,
+          "scoreContribution": 25,
+          "details": "Found registered credential record for \"DEMO-CERT-2002\" in the Institutional Registry of Example Technical Institute. Status: VALID."
+        },
+        {
+          "name": "Recipient Identity Integrity",
+          "category": "Identity",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\"."
+        },
+        {
+          "name": "Issuing Authority Accreditation",
+          "category": "Accreditation",
+          "passed": true,
+          "scoreContribution": 10,
+          "details": "Issuing institution \"Example Technical Institute\" verified against Accredited Issuers List. Accreditation code: ETI-ACCRED-2025-442."
+        },
+        {
+          "name": "Program & Credential Type Match",
+          "category": "Curriculum",
+          "passed": false,
+          "scoreContribution": 0,
+          "details": "PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\"."
+        },
+        {
+          "name": "Anti-Tamper & Document Metadata Analysis",
+          "category": "Security Markings",
+          "passed": true,
+          "scoreContribution": 0,
+          "details": "Document security markings and layout symmetry are consistent with authentic institutional issuance standards."
+        }
+      ],
+      "discrepancies": [
+        "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\".",
+        "PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\"."
+      ],
+      "discrepancySummary": "RECIPIENT MISMATCH: Certificate text indicates recipient is \"Priya Sharma\", but institutional registry records confirm Certificate ID DEMO-CERT-2002 was legally issued to \"Vikram Malhotra\". PROGRAM SPECIFICATION MISMATCH: Certificate states \"Web Development\", but registry record specifies \"Cybersecurity Fundamentals\".",
+      "extractedData": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Priya Sharma",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Web Development",
+        "issueDate": "2025-08-15",
+        "fileHash": "d715c24c53f31e5ef531fe59aeb08bc5..."
+      },
+      "registryMatch": {
+        "certificateId": "DEMO-CERT-2002",
+        "recipientName": "Vikram Malhotra",
+        "issuingInstitution": "Example Technical Institute",
+        "certificateType": "Cybersecurity Fundamentals",
+        "issueDate": "15 August 2025",
+        "status": "VALID",
+        "accreditationCode": "ETI-ACCRED-2025-442",
+        "credentialHash": "sha256-4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f",
+        "issuerAuthority": "Example Technical Institute Board of Certifications",
+        "issuerKeyFingerprint": "9B:4E:A2:71:08:92:DF:5C:30",
+        "tamperProtectionEnabled": true,
+        "remarks": "Official institutional registry record. Recipient on record: Vikram Malhotra."
+      },
+      "reviewedAt": "2026-10-22T14:17:16.350Z"
+    },
     {
       "id": "ver_1792678464690_265dg",
       "timestamp": "2026-10-22T14:14:24.690Z",
@@ -1113,6 +1238,48 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "log_1792678636362_zy61f",
+      "userId": "usr_hradmin",
+      "action": "DECISION_RECORDED",
+      "details": "HR Administrator hradmin recorded decision: FLAGGED AS POTENTIALLY FAKE for verification ver_1792678624810_7d2c8.",
+      "timestamp": "2026-10-22T14:17:16.362Z"
+    },
+    {
+      "id": "log_1792678624824_b2sck",
+      "userId": "usr_hradmin",
+      "action": "SCAN_COMPLETED",
+      "details": "HR Administrator hradmin scanned certificate \"Sample_Certificate_B_Altered_DEMO.pdf\" -> Result: FLAGGED AS POTENTIALLY FAKE",
+      "timestamp": "2026-10-22T14:17:04.824Z"
+    },
+    {
+      "id": "log_1792678604227_8l771",
+      "userId": "usr_hradmin",
+      "action": "USER_LOGIN",
+      "details": "User hradmin (hr) logged in successfully.",
+      "timestamp": "2026-10-22T14:16:44.227Z"
+    },
+    {
+      "id": "log_1792678572352_x7dqt",
+      "userId": "usr_emp2",
+      "action": "USER_LOGOUT",
+      "details": "User employee2 logged out.",
+      "timestamp": "2026-10-22T14:16:12.352Z"
+    },
+    {
+      "id": "log_1792678568919_qfhtp",
+      "userId": "usr_emp2",
+      "action": "CERTIFICATE_SUBMITTED",
+      "details": "Employee employee2 submitted certificate \"WEB\" (ID: DEMO-CERT-2002).",
+      "timestamp": "2026-10-22T14:16:08.919Z"
+    },
+    {
+      "id": "log_1792678490643_16tfk",
+      "userId": "usr_emp2",
+      "action": "USER_LOGIN",
+      "details": "User employee2 (employee) logged in successfully.",
+      "timestamp": "2026-10-22T14:14:50.643Z"
+    },
     {
       "id": "log_1792678470454_gn2d1",
       "userId": "usr_hradmin",

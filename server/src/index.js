@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
@@ -10,6 +11,7 @@ import samplesRoutes from './routes/samples.js';
 import registryRoutes from './routes/registry.js';
 import { generateDemoCertificates } from './services/sampleGenerator.js';
 import { connectMongoDB } from './config/db.js';
+import { seedMongoDatabase } from './db/seedMongo.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -69,7 +71,10 @@ app.use((err, req, res, next) => {
 // Startup sequence
 async function startServer() {
   // 1. Connect MongoDB / Mongoose if available
-  await connectMongoDB();
+  const isConnected = await connectMongoDB();
+  if (isConnected) {
+    await seedMongoDatabase();
+  }
 
   // 2. Generate Demonstration Certificates if needed
   try {
